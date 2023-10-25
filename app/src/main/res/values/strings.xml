@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lab 2</string>
+    <string name="my_photos">My Photos</string>
+    <string name="hello_world">Hello World</string>
+</resources>

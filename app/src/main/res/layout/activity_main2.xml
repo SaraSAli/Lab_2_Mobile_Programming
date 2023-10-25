@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".ViewActivity">
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/my_photos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#4689C8"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/photo_image_view"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/title_text_view"
+        app:srcCompat="@drawable/time" />
+
+    <Button
+        android:id="@+id/button_id"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_below="@+id/title_text_view"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="24dp"
+        android:layout_toEndOf="@+id/photo_image_view"
+        android:text="@string/hello_world" />
+
+    <View
+        android:id="@+id/view_id"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/button_id"
+        android:background="#4E4B4F" />
+
+    <EditText
+        android:id="@+id/album_description_view"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/view_id"
+        android:layout_marginTop="5dp"
+        android:hint="Description"
+        android:inputType="textMultiLine" />
+
+    <CheckBox
+        android:id="@+id/notify_me_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/album_description_view"
+        android:text="Notify Me"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notify_me_checkbox"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:numStars="6"
+        android:rating="3"
+        android:stepSize="0.5" />
+
+</RelativeLayout>
